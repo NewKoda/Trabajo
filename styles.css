@@ -1,0 +1,388 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #2D2D2D;
+    color: white;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: black;
+}
+
+.title {
+    width: 871px;
+    height: 265px;
+    left: 388px;
+    top: 76px;
+    position: absolute;
+    color: black;
+    font-size: 12px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.banner-image {
+    width: 1512px;
+    height: 495px;
+    left: 0px;
+    top: 111px;
+    position: absolute;
+}
+
+.header {
+    width: 1512px;
+    height: 84px;
+    left: 0px;
+    top: 96px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.70);
+}
+
+.header-left {
+    width: 117px;
+    height: 92px;
+    left: 0px;
+    top: -8px;
+    position: absolute;
+    background: black;
+}
+
+.header-title {
+    width: 100px;
+    height: 26px;
+    left: 15px;
+    top: 26px;
+    position: absolute;
+}
+
+.header-icon {
+    width: 9px;
+    height: 18px;
+    left: 3px;
+    top: 0px;
+    position: absolute;
+    background: black;
+    border: 2px white solid;
+}
+
+.header-text {
+    width: 77.62px;
+    height: 20px;
+    padding-right: 6.62px;
+    left: 22.38px;
+    top: 6px;
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    font-family: Open Sans;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.header-message {
+    width: 1304px;
+    height: 20px;
+    left: 180px;
+    top: 32px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.message-text {
+    color: white;
+    font-size: 16px;
+    font-family: Oregano;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.message-divider {
+    color: #FFE2C5;
+    font-size: 16px;
+    font-family: Oregano;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 3.20px;
+    word-wrap: break-word;
+}
+
+.footer {
+    width: 1512px;
+    height: 62px;
+    left: 0px;
+    top: 606px;
+    position: absolute;
+    background: white;
+}
+
+.sidebar-main {
+    width: 1276px;
+    height: 2240px;
+    left: 116px;
+    top: 725px;
+    position: absolute;
+    background: #2D2D2D;
+    border: 1px #0094FF solid;
+}
+
+.sidebar-item {
+    width: 239px;
+    height: 181px;
+    position: absolute;
+    background: #4D4D4D;
+    border: 1px #0094FF solid;
+}
+
+#item1 {
+    left: 139px;
+    top: 748px;
+}
+
+#item2 {
+    left: 139px;
+    top: 1177px;
+}
+
+#item3 {
+    left: 139px;
+    top: 1358px;
+}
+
+#item4 {
+    left: 139px;
+    top: 1539px;
+}
+
+#item5 {
+    left: 139px;
+    top: 1720px;
+}
+
+#item6 {
+    left: 139px;
+    top: 1901px;
+}
+
+.content-box {
+    width: 988px;
+    height: 1098px;
+    left: 388px;
+    top: 748px;
+    position: absolute;
+    background: #4D4D4D;
+    border: 1px #0094FF solid;
+}
+
+.title-box {
+    width: 219px;
+    height: 150px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: Oregano;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+#title2 {
+    top: 240px;
+}
+
+#title3 {
+    top: 420px;
+}
+
+#title4 {
+    top: 600px;
+}
+
+#title5 {
+    top: 780px;
+}
+
+.user-online {
+    width: 211px;
+    height: 41px;
+    position: absolute;
+    left: 389px;
+    top: 685px;
+    color: white;
+    font-size: 16px;
+    font-family: Open Sans;
+    font-weight: 700;
+}
+
+.user-count {
+    width: 214px;
+    height: 35px;
+    position: absolute;
+    left: 389px;
+    top: 718px;
+    color: white;
+    font-size: 13px;
+    font-family: Open Sans;
+    font-weight: 400;
+}
+
+.content-image {
+    width: 968px;
+    height: 640px;
+    position: absolute;
+    left: 388px;
+    top: 884px;
+}
+
+.news-section {
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.70);
+    color: white;
+}
+
+.news-header {
+    width: 1512px;
+    height: 29px;
+    position: absolute;
+    background: black;
+}
+
+.news-title {
+    width: 219px;
+    height: 26px;
+    position: absolute;
+    left: 597px;
+    top: 14px;
+    font-size: 14px;
+    font-family: Open Sans;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.news-profile-pic {
+    width: 38px;
+    height: 39px;
+    position: absolute;
+    left: 113px;
+    top: 38px;
+}
+
+.news-profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.news-source {
+    width: 232px;
+    height: 27px;
+    position: absolute;
+    left: 157px;
+    top: 53px;
+}
+
+.source-name {
+    color: white;
+    font-size: 13px;
+    font-family: Open Sans;
+    font-weight: 700;
+}
+
+.news-time {
+    color: #F3F3F3;
+    font-size: 13px;
+    font-family: Open Sans;
+    font-weight: 400;
+}
+
+.news-badge {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 137px;
+    top: 55px;
+    background: white;
+    border-radius: 50%;
+}
+
+.news-admin {
+    width: 67px;
+    height: 21px;
+    position: absolute;
+    left: 131px;
+    top: 32px;
+    color: white;
+    font-size: 13px;
+    font-family: Open Sans;
+    font-weight: 700;
+}
+
+.discussion-box {
+    width: 325px;
+    height: 300px;
+    position: absolute;
+    left: 139px;
+    top: 848px;
+    background: #4D4D4D;
+    border: 1px #0094FF solid;
+}
+
+.discussion-header {
+    width: 311px;
+    height: 47px;
+    position: absolute;
+    left: 7px;
+    top: 6px;
+    color: white;
+    font-size: 15px;
+    font-family: Open Sans;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.discussion-image {
+    width: 358px;
+    height: 584px;
+    position: absolute;
+    left: 7px;
+    top: 53px;
+}
+
+.discussion-title {
+    width: 258px;
+    height: 26px;
+    position: absolute;
+    left: 143px;
+    top: 1175px;
+    color: white;
+    font-size: 16px;
+    font-family: Open Sans;
+    font-weight: 700;
+}
+
+.profile-pic {
+    width: 38px;
+    height: 39px;
+    position: absolute;
+    left: 434px;
+    top: 1177px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
