@@ -1,0 +1,70 @@
+.texto {
+    color: #ffffff; /* Color inicial */
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el texto */
+    font-size: 13px; 
+    font-family: Open Sans; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    line-height: 20px; 
+    word-wrap: break-word"
+}
+
+/* Al pasar el mouse, cambia el color */
+.texto:hover {
+    color: #eb8aff; /* Nuevo color al hacer hover */
+}
+.logo {
+    width: 200px;
+    height: auto;
+    filter: grayscale(100%); /* Aplica un filtro de escala de grises inicialmente */
+    transition: 0.3s ease; /* Transición suave al cambiar filtros */
+}
+
+.logo:hover {
+    filter: sepia(100%) saturate(200%); /* Al pasar el mouse, cambia a un filtro sepia */
+}
+   body {
+        background-color: black;
+        color: white; /* Para que el texto sea visible en el fondo negro */
+    }
+
+.parrafo {
+    color: white; 
+    font-size: 16px; 
+    font-family: Oregano; 
+    font-weight: 400; 
+    text-transform: uppercase; 
+    line-height: 20px; 
+    word-wrap: break-word;
+}
+
+.Temas{
+
+  width: 219px; 
+  height: 150px; 
+  position: absolute; 
+  text-align: center; 
+  color: white; 
+  font-size: 16px; 
+  font-family: Open Sans; 
+  font-weight: 700; 
+  text-transform: capitalize; 
+  line-height: 20px; 
+  word-wrap: break-word"  
+}
+
+.PubliTitle {
+
+width: 498px; 
+height: 23px; 
+position: absolute; 
+color: white; 
+font-size: 20px; 
+font-family: Just Another Hand; 
+font-weight: 400; 
+text-transform: uppercase; 
+line-height: 20px; 
+word-wrap: break-word
+}
