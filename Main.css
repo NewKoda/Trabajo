@@ -30,7 +30,7 @@
         color: white; /* Para que el texto sea visible en el fondo negro */
     }
 
-.parrafo {
+.parrafomove {
     color: white; 
     font-size: 16px; 
     font-family: Oregano; 
@@ -70,7 +70,7 @@ word-wrap: break-word
 }
 .PubParrafo{
 
-width: 964px; 
+width: 940px; 
 height: 347px; 
 left: 412px; 
 top: 1490px; 
@@ -82,4 +82,31 @@ font-weight: 700;
 text-transform: capitalize; 
 line-height: 20px;
 
+}
+
+.Textinformativo{
+   width: 100px; 
+   height: 25px; 
+   position: absolute; 
+   text-align: center;
+   color: #ffffff; 
+   font-size: 12px; 
+   font-family: Just Another Hand; 
+   font-weight: 400; 
+   line-height: 20px; 
+   word-wrap: break-word;
+
+}
+
+.TittleBlue {
+    width: 138px; 
+    height: 26px; 
+    text-align: center;
+    font-family: Just Another Hand; 
+    font-weight: 300;  
+    line-height: 20px; 
+    word-wrap: break-word;
+}
+.TittleBlue:hover {
+    color: #eb8aff;
 }
