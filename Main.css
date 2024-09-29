@@ -68,3 +68,18 @@ text-transform: uppercase;
 line-height: 20px; 
 word-wrap: break-word
 }
+.PubParrafo{
+
+width: 964px; 
+height: 347px; 
+left: 412px; 
+top: 1490px; 
+position: absolute ;
+color: #B9B9B9; 
+font-size: 20px; 
+font-family: Open Sans; 
+font-weight: 700; 
+text-transform: capitalize; 
+line-height: 20px;
+
+}
