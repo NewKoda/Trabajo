@@ -1,14 +1,16 @@
 .texto {
-    
- 
     color: #ffffff; /* Color inicial */
-    
+    font-size: 24px;
     font-weight: bold;
     cursor: pointer; /* Cambia el cursor al pasar sobre el texto */
-    font-family: 'Open Sans'; 
+    font-size: 13px; 
+    font-family: Open Sans; 
+    font-weight: 700; 
     text-transform: uppercase; 
     line-height: 20px; 
-    word-wrap: break-word;
+    word-wrap: break-word"
+    
+
 }
 
 
