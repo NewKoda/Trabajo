@@ -498,6 +498,42 @@ line-height: 20px;
     word-wrap: break-word; /* Ajustar palabras largas si es necesario */
 }
 
+.texto-reto {
+    width: 106px;
+    height: 59px;
+    position: absolute;
+    left: 388px; /* Ajusta según sea necesario */
+    top: 349px; /* Ajusta según sea necesario */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.contenido-reto {
+    text-align: center;
+}
+
+.letra-mayus {
+    color: white;
+    font-size: 24px;
+    font-family: 'Just Another Hand';
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.letra-minus {
+    color: white;
+    font-size: 24px;
+    font-family: 'Just Another Hand';
+    font-weight: 400;
+    text-transform: lowercase;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
 
 
 
