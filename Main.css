@@ -354,3 +354,41 @@ line-height: 20px;
     word-wrap: break-word; /* Ajustar palabras largas si es necesario */
     white-space: nowrap; /* Mantener el texto en una sola línea */
 }
+
+
+.texto-new-koda {
+    width: 67px; /* Ancho del contenedor */
+    height: 25px; /* Altura del contenedor */
+    left: 1312px; /* Posición izquierda */
+    top: 676px; /* Posición superior */
+    position: absolute; /* Posicionamiento absoluto */
+    display: inline-flex; /* Mostrar en línea con flexbox */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    text-align: center; /* Alinear texto al centro */
+    color: white; /* Color del texto */
+    font-size: 14px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    text-transform: uppercase; /* Transformar a mayúsculas */
+    line-height: 20px; /* Altura de línea */
+    
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+.texto-espero-mejorar {
+    width: 102px; /* Ancho del contenedor */
+    height: 24px; /* Altura del contenedor */
+    left: 268px; /* Posición izquierda */
+    top: 1184px; /* Posición superior */
+    position: absolute; /* Posicionamiento absoluto */
+    text-align: center; /* Alinear texto al centro */
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    text-transform: uppercase; /* Transformar a mayúsculas */
+    line-height: 20px; /* Altura de línea */
+    white-space: nowrap; /* Mantener el texto en una sola línea */   
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
