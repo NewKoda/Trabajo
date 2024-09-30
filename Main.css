@@ -1,8 +1,8 @@
 .texto {
-    position: absolute; /* O relative según sea necesario */
+    
  
     color: #ffffff; /* Color inicial */
-    font-size: 24px; 
+    
     font-weight: bold;
     cursor: pointer; /* Cambia el cursor al pasar sobre el texto */
     font-family: 'Open Sans'; 
