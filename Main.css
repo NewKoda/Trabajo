@@ -392,3 +392,61 @@ line-height: 20px;
     white-space: nowrap; /* Mantener el texto en una sola línea */   
     word-wrap: break-word; /* Ajustar palabras largas si es necesario */
 }
+
+.texto-ojala-estrellas {
+    width: 106px; /* Ancho del contenedor */
+    height: 24px; /* Altura del contenedor */
+    left: 270px; /* Posición izquierda */
+    top: 1334px; /* Posición superior */
+    position: absolute; /* Posicionamiento absoluto */
+    text-align: center; /* Alinear texto al centro */
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    text-transform: uppercase; /* Transformar a mayúsculas */
+    line-height: 20px; /* Altura de línea */
+    white-space: nowrap; /* Mantener el texto en una sola línea */  
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+
+.texto-new-koda {
+    width: 67px; /* Ancho del contenedor */
+    height: 25px; /* Altura del contenedor */
+    left: 286px; /* Posición izquierda */
+    top: 1290px; /* Posición superior */
+    position: absolute; /* Posicionamiento absoluto */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    display: inline-flex; /* Usar flexbox para alinear elementos */
+    text-align: center; /* Alinear texto al centro */
+    color: white; /* Color del texto */
+    font-size: 20px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    line-height: 20px; /* Altura de línea */
+    white-space: nowrap; /* Mantener el texto en una sola línea */  
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+.texto-koda {
+    width: 67px; /* Ancho del contenedor */
+    height: 25px; /* Altura del contenedor */
+    left: 286px; /* Posición izquierda */
+    top: 1140px; /* Posición superior */
+    position: absolute; /* Posicionamiento absoluto */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    display: inline-flex; /* Usar flexbox para alinear elementos */
+    text-align: center; /* Alinear texto al centro */
+    color: white; /* Color del texto */
+    font-size: 20px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    line-height: 20px; /* Altura de línea */
+    white-space: nowrap; /* Mantener el texto en una sola línea */  
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+
