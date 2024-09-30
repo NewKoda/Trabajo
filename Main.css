@@ -109,3 +109,385 @@ line-height: 20px;
 .TittleBlue:hover {
     color: #eb8aff;
 }
+.texto-ansiedad-gimnasio {
+    width: 484px;
+    height: 109px;
+    position: absolute;
+    left: 262px;
+    top: 568px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.texto-rutina-exito {
+    width: 484px;
+    height: 109px;
+    position: absolute;
+    left: 262px;
+    top: 720px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.texto-rutinas-fullbody {
+    width: 484px;
+    height: 110px;
+    position: absolute;
+    left: 262px;
+    top: 879px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.texto-fecha {
+    width: 152px;
+    height: 34px;
+    position: absolute;
+    left: 379px;
+    top: 1291px;
+    text-align: center;
+    color: #E8E8E8;
+    font-size: 14px;
+    font-family: 'Just Another Hand';
+    font-weight: 500;
+    text-transform: none; /* Mezcla mayúsculas y minúsculas */
+    line-height: 20px;
+    word-wrap: break-word;
+}
+.texto-fecha-ajustado {
+    width: 119px;
+    height: 24px;
+    position: absolute;
+    left: 382px;
+    top: 1141px;
+    text-align: center;
+    color: #E8E8E8;
+    font-size: 20px;
+    font-family: 'Just Another Hand';
+    font-weight: 400;
+    text-transform: none; /* Mezcla mayúsculas y minúsculas */
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.texto-ultimos-mensajes {
+    width: 328px;
+    height: 16px;
+    position: absolute;
+    left: 159px;
+    top: 1062px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Just Another Hand';
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.texto-total-usuarios {
+    width: 229px;
+    height: 25px;
+    position: absolute;
+    left: 1148px;
+    top: 457px;
+    text-align: center;
+    color: #C2C2C2;
+    font-size: 14px;
+    font-family: 'Just Another Hand';
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.texto-no-usuarios {
+    width: 200px; /* Aumentar el ancho */
+    height: 30px; 
+    position: absolute;
+    left: 1156px;
+    top: 405px;
+    text-align: center;
+    color: white;
+    font-size: 12px; /* Reducir el tamaño de fuente */
+    font-family: 'Just Another Hand';
+    font-weight: 600;
+    line-height: 15px; /* Ajustar la altura de línea */
+    text-transform: uppercase;
+    word-wrap: normal; /* Cambiar a normal */
+    white-space: nowrap; /* Mantener el texto en una sola línea */
+}
+
+.estadisticas-foro {
+    width: 138px;
+    height: 26px;
+    position: absolute;
+    left: 1196px;
+    top: 539px;
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.estadisticas-texto {
+    width: 300%; /* Para que ocupe todo el ancho disponible */
+    text-align: center; /* Alinear el texto al centro */
+    color: #0774C2;
+    font-size: 18px;
+    font-family: 'Just Another Hand';
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 20px; /* Ajustar la altura de línea */
+    word-wrap: break-word; /* Permitir el ajuste de línea si es necesario */
+    white-space: nowrap; /* Mantener el texto en una sola línea */
+}
+
+.temas {
+    width: 38px;
+    height: 25px;
+    position: absolute;
+    left: 1156px;
+    top: 578px;
+  
+    color: white; /* Color del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+   
+    line-height: 20px; /* Altura de línea */
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+    white-space: nowrap; /* Mantener el texto en una sola línea */
+}
+
+.usuarios {
+    width: 80px; /* Ancho del contenedor */
+    height: 25px; /* Altura del contenedor */
+    position: absolute; /* Posicionamiento absoluto */
+    left: 1156px; /* Distancia desde el lado izquierdo */
+    top: 642px; /* Distancia desde la parte superior */
+    text-align: center; /* Alinear texto al centro */
+    color: #C2C2C2; /* Color del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    line-height: 20px; /* Altura de línea */
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+     white-space: nowrap; /* Mantener el texto en una sola línea */
+}
+
+.ultimo-usuario {
+    width: 86px; /* Ancho del contenedor */
+    height: 25px; /* Altura del contenedor */
+    position: absolute; /* Posicionamiento absoluto */
+    left: 1156px; /* Distancia desde el lado izquierdo */
+    top: 676px; /* Distancia desde la parte superior */
+    text-align: center; /* Alinear texto al centro */
+    color: #C2C2C2; /* Color del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    line-height: 20px; /* Altura de línea */
+    white-space: nowrap; /* Mantener el texto en una sola línea */
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+.mensajes {
+    width: 56px; /* Ancho del contenedor */
+    height: 25px; /* Altura del contenedor */
+    position: absolute; /* Posicionamiento absoluto */
+    left: 1156px; /* Distancia desde el lado izquierdo */
+    top: 608px; /* Distancia desde la parte superior */
+    text-align: center; /* Alinear texto al centro */
+    color: #C2C2C2; /* Color del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    line-height: 20px; /* Altura de línea */
+    white-space: nowrap; /* Mantener el texto en una sola línea */
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+.conectados {
+    width: 98px; /* Ancho del contenedor */
+    height: 26px; /* Altura del contenedor */
+    text-align: center; /* Alinear texto al centro */
+    color: #0774C2; /* Color del texto */
+    font-size: 22px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    line-height: 20px; /* Altura de línea */
+    white-space: nowrap; /* Mantener el texto en una sola línea */
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+.numero-usuarios {
+    width: 38px; /* Ancho del contenedor */
+    height: 25px; /* Altura del contenedor */
+    left: 1330px; /* Posición izquierda */
+    top: 608px; /* Posición superior */
+    position: absolute; /* Posicionamiento absoluto */
+    text-align: center; /* Alinear texto al centro */
+    color: white; /* Color del texto */
+    font-size: 20px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    text-transform: uppercase; /* Transformar a mayúsculas */
+    line-height: 20px; /* Altura de línea */
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+    white-space: nowrap; /* Mantener el texto en una sola línea */
+}
+
+
+.texto-new-koda {
+    width: 67px; /* Ancho del contenedor */
+    height: 25px; /* Altura del contenedor */
+    left: 1312px; /* Posición izquierda */
+    top: 676px; /* Posición superior */
+    position: absolute; /* Posicionamiento absoluto */
+    display: inline-flex; /* Mostrar en línea con flexbox */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    text-align: center; /* Alinear texto al centro */
+    color: white; /* Color del texto */
+    font-size: 14px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    text-transform: uppercase; /* Transformar a mayúsculas */
+    line-height: 20px; /* Altura de línea */
+    
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+.texto-espero-mejorar {
+    width: 102px; /* Ancho del contenedor */
+    height: 24px; /* Altura del contenedor */
+    left: 268px; /* Posición izquierda */
+    top: 1184px; /* Posición superior */
+    position: absolute; /* Posicionamiento absoluto */
+    text-align: center; /* Alinear texto al centro */
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    text-transform: uppercase; /* Transformar a mayúsculas */
+    line-height: 20px; /* Altura de línea */
+    white-space: nowrap; /* Mantener el texto en una sola línea */   
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+.texto-ojala-estrellas {
+    width: 106px; /* Ancho del contenedor */
+    height: 24px; /* Altura del contenedor */
+    left: 270px; /* Posición izquierda */
+    top: 1334px; /* Posición superior */
+    position: absolute; /* Posicionamiento absoluto */
+    text-align: center; /* Alinear texto al centro */
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    text-transform: uppercase; /* Transformar a mayúsculas */
+    line-height: 20px; /* Altura de línea */
+    white-space: nowrap; /* Mantener el texto en una sola línea */  
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+
+.texto-new-koda {
+    width: 67px; /* Ancho del contenedor */
+    height: 25px; /* Altura del contenedor */
+    left: 286px; /* Posición izquierda */
+    top: 1290px; /* Posición superior */
+    position: absolute; /* Posicionamiento absoluto */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    display: inline-flex; /* Usar flexbox para alinear elementos */
+    text-align: center; /* Alinear texto al centro */
+    color: white; /* Color del texto */
+    font-size: 20px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    line-height: 20px; /* Altura de línea */
+    white-space: nowrap; /* Mantener el texto en una sola línea */  
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+.texto-koda {
+    width: 67px; /* Ancho del contenedor */
+    height: 25px; /* Altura del contenedor */
+    left: 286px; /* Posición izquierda */
+    top: 1140px; /* Posición superior */
+    position: absolute; /* Posicionamiento absoluto */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    display: inline-flex; /* Usar flexbox para alinear elementos */
+    text-align: center; /* Alinear texto al centro */
+    color: white; /* Color del texto */
+    font-size: 20px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    line-height: 20px; /* Altura de línea */
+    white-space: nowrap; /* Mantener el texto en una sola línea */  
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+.texto-viernes {
+    width: 122px; /* Ancho del contenedor */
+    height: 24px; /* Altura del contenedor */
+    left: 399px; /* Posición izquierda */
+    top: 1291px; /* Posición superior */
+    position: absolute; /* Posicionamiento absoluto */
+    text-align: center; /* Alinear texto al centro */
+    white-space: nowrap; /* Mantener el texto en una sola línea */
+}
+
+.texto-viernes span {
+    color: #E8E8E8; /* Color del texto */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    line-height: 20px; /* Altura de línea */
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+.texto-vierne {
+    width: 119px; /* Ancho del contenedor */
+    height: 24px; /* Altura del contenedor */
+    left: 399px; /* Posición izquierda */
+    top: 1141px; /* Posición superior */
+    position: absolute; /* Posicionamiento absoluto */
+    text-align: center; /* Alinear texto al centro */
+    white-space: nowrap; /* Mantener el texto en una sola línea */
+}
+
+.texto-vierne span {
+    color: #E8E8E8; /* Color del texto */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    line-height: 20px; /* Altura de línea */
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+
+
+
+
