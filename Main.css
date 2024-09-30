@@ -449,4 +449,45 @@ line-height: 20px;
     word-wrap: break-word; /* Ajustar palabras largas si es necesario */
 }
 
+.texto-viernes {
+    width: 122px; /* Ancho del contenedor */
+    height: 24px; /* Altura del contenedor */
+    left: 399px; /* Posición izquierda */
+    top: 1291px; /* Posición superior */
+    position: absolute; /* Posicionamiento absoluto */
+    text-align: center; /* Alinear texto al centro */
+    white-space: nowrap; /* Mantener el texto en una sola línea */
+}
+
+.texto-viernes span {
+    color: #E8E8E8; /* Color del texto */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    line-height: 20px; /* Altura de línea */
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+.texto-vierne {
+    width: 119px; /* Ancho del contenedor */
+    height: 24px; /* Altura del contenedor */
+    left: 399px; /* Posición izquierda */
+    top: 1141px; /* Posición superior */
+    position: absolute; /* Posicionamiento absoluto */
+    text-align: center; /* Alinear texto al centro */
+    white-space: nowrap; /* Mantener el texto en una sola línea */
+}
+
+.texto-vierne span {
+    color: #E8E8E8; /* Color del texto */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-family: 'Just Another Hand'; /* Fuente personalizada */
+    font-weight: 400; /* Peso de la fuente */
+    line-height: 20px; /* Altura de línea */
+    word-wrap: break-word; /* Ajustar palabras largas si es necesario */
+}
+
+
+
+
 
