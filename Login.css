@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Fondo negro */
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.70);
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.announcement {
+    display: flex;
+    align-items: center;
+}
+
+.announcement img {
+    width: 62px;
+    height: 59px;
+    margin-right: 10px;
+}
+
+.announcement h2 {
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+main {
+    padding: 20px;
+}
+
+.login-section {
+    text-align: center;
+}
+
+.login-section h1 {
+    font-size: 80px;
+    font-family: Just Another Hand, cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: Just Another Hand, cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.10);
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ccc;
+}
+
+.register-prompt {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Just Another Hand, cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.register-prompt a {
+    color: white;
+    text-decoration: none;
+    font-size: 37px;
+    font-family: Just Another Hand, cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .login-section h1 {
+        font-size: 40px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
