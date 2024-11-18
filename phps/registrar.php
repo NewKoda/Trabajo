@@ -1,28 +1,36 @@
 <?php
-// Incluir el archivo de conexión
-include 'conexion.php'; // Asegúrate de que el archivo 'conexion.php' esté en el mismo directorio
+// Iniciar sesión si es necesario para la redirección posterior
+session_start();
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Recibiendo los valores del formulario
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+// Incluir archivo de conexión con la base de datos
+include('conexion.php'); // Asegúrate de que este archivo esté configurado correctamente
 
-    // Cifrar la contraseña para mayor seguridad
-    $password_hash = password_hash($password, PASSWORD_DEFAULT);
+// Verificar si el formulario fue enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Capturar los datos del formulario
+    $username = mysqli_real_escape_string($conexion, $_POST['username']);
+    $email = mysqli_real_escape_string($conexion, $_POST['email']);
+    $password = mysqli_real_escape_string($conexion, $_POST['password']);
+    $terms = isset($_POST['terms']) ? 1 : 0; // Comprobar si se aceptaron los términos
 
-    // Preparar la consulta SQL para insertar los datos en la tabla
-    $sql = "INSERT INTO usuarios (username, email, password) VALUES ('$username', '$email', '$password_hash')";
+    // Encriptar la contraseña antes de almacenarla
+    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
-    // Ejecutar la consulta
-    if ($conn->query($sql) === TRUE) {
-        echo "Nuevo perfil creado con éxito.";
-        header('Location: success.html'); // Redirigir a una página de éxito (puedes crearla si lo deseas)
+    // Insertar los datos en la base de datos
+    $sql = "INSERT INTO usuarios (username, email, password, terms_accepted) 
+            VALUES ('$username', '$email', '$passwordHash', '$terms')";
+
+    if (mysqli_query($conexion, $sql)) {
+        // Redirigir a una página de éxito o a la página principal después de registrar al usuario
+        $_SESSION['mensaje'] = 'Registro exitoso, por favor inicia sesión.';
+        header("Location: login.html");
+        exit();
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        // Si hay un error con la base de datos
+        echo "Error: " . mysqli_error($conexion);
     }
 
     // Cerrar la conexión
-    $conn->close();
+    mysqli_close($conexion);
 }
 ?>
