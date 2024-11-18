@@ -107,7 +107,7 @@ body {
     }
 }
 
-@media (max-width: 480px) 
+@media (max-width: 480px) {
     .content {
         top: 400px;
         left: 5px;
@@ -752,4 +752,5 @@ body {
     .large-dark-box {
         top: 700px;
     }
+}
 }

@@ -14,5 +14,8 @@ if ($conn->connect_error) {
 }
 
 // Establecer el conjunto de caracteres
-$conn->set_charset("utf8");
+if (!$conn->set_charset("utf8")) {
+    printf("Error cargando el conjunto de caracteres utf8: %s\n", $conn->error);
+    exit();
+}
 ?>
