@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear Perfil</title>
+    <!-- Asegúrate de que el archivo CSS esté en la carpeta "Styles" en tu servidor -->
     <link rel="stylesheet" href="Styles/Register.css">
 </head>
 <body>
     <div class="container">
+        <!-- CABECERA -->
         <header>
             <div class="header-content">
                 <div class="announcement">
-                         <a href="Main.html" style="text-decoration: none;">
-                            <img src="imagenes/Logo.png" alt="Logo">
-                         </a>
+                    <a href="Main.html" style="text-decoration: none;">
+                        <!-- Asegúrate de que el logo esté en la carpeta "imagenes" -->
+                        <img src="imagenes/Logo.png" alt="Logo">
+                    </a>
                     <h2>ANUNCIOS</h2>
                 </div>
                 <div class="marquee-container">
@@ -25,38 +28,44 @@
                 </div>
             </div>
         </header>
+
+        <!-- SECCIÓN PRINCIPAL -->
         <main>
             <section class="profile-section">
                 <h1>Crear perfil</h1>
-                <form class="profile-form" method="POST" action="registrar.php"> <!-- Enviar datos a registrar.php -->
+                <!-- Formulario que envía datos al archivo PHP -->
+                <form class="profile-form" method="POST" action="registrar.php">
                     <div class="form-group">
                         <label for="username">Nombre usuario</label>
-                        <input type="text" id="username" name="username" required>
+                        <input type="text" id="username" name="username" placeholder="Ingrese su nombre de usuario" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Correo</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
                     </div>
                     <div class="form-group">
                         <label for="password">Contraseña</label>
-                        <input type="password" id="password" name="password" required>
+                        <input type="password" id="password" name="password" placeholder="Cree una contraseña segura" required>
                     </div>
                     <div class="form-group">
                         <input type="checkbox" id="terms" name="terms" required>
-                        <label for="terms">ACEPTO TERMINOS Y CONDICIONES</label>
+                        <label for="terms">Acepto los términos y condiciones</label>
                     </div>
-                    <button href="login.html" type="submit">REGISTRAR</button>
+                    <button type="submit">Registrar</button>
                 </form>
+
+                <!-- Enlace al login -->
                 <div class="login-prompt">
-                    <span>¿YA TIENES UNA CUENTA?</span>
-                    <a href="login.html">INGRESA</a>
+                    <span>¿Ya tienes una cuenta?</span>
+                    <a href="login.html">Ingresa</a>
                 </div>
             </section>
-
         </main>
+
+        <!-- PIE DE PÁGINA -->
         <footer>
+            <p>© 2024 Tu Proyecto. Todos los derechos reservados.</p>
         </footer>
     </div>
 </body>
 </html>
-
