@@ -1,0 +1,114 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* Cabecera */
+  header {
+    background-color: #222;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo img {
+    height: 40px;
+  }
+  
+  header .menu a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  header .perfil-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  header .perfil-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Secciones principales */
+  main {
+    padding: 20px;
+  }
+  
+  .main-section {
+    margin-bottom: 30px;
+  }
+  
+  .rangos-section h2,
+  .mensajes-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .rangos-section .rango {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .rango-imagen img {
+    height: 80px;
+  }
+  
+  .rango-descripcion {
+    margin-left: 20px;
+  }
+  
+  /* Últimos mensajes */
+  .mensaje {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Pie de página */
+  footer {
+    background-color: #222;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer .footer-container a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  footer .footer-container a:hover {
+    color: #00f;
+    text-decoration: underline;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .rangos-section .rango {
+      flex-direction: column;
+    }
+  
+    .rango-descripcion {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .mensaje {
+      padding: 5px;
+      font-size: 14px;
+    }
+  }
+  
