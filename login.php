@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'conexion.php'; // Incluir el archivo de conexión
 
 // Obtener datos del formulario y sanitizarlos
@@ -16,8 +17,8 @@ if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     if (password_verify($pass, $row['password'])) {
         // Inicio de sesión exitoso
-        echo "Inicio de sesión exitoso";
-        header("Location: main.html");
+        $_SESSION['user_id'] = $row['id'];
+        header("Location: perfil.php");
         exit();
     } else {
         // Contraseña incorrecta
