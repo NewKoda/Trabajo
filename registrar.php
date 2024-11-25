@@ -1,4 +1,7 @@
 <?php
+// Iniciar sesión para guardar la información del usuario
+session_start();
+
 // Mostrar errores de PHP (para depuración)
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -51,6 +54,9 @@ try {
         $stmt->bindParam(':password', $hashed_password);
 
         if ($stmt->execute()) {
+            // Guardar el nombre de usuario en la sesión
+            $_SESSION['username'] = $username;
+
             // Redirigir a la página principal después de un registro exitoso
             header("Location: Main.html");
             exit();
