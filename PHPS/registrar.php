@@ -58,7 +58,7 @@ try {
             $_SESSION['username'] = $username;
 
             // Redirigir a la página principal después de un registro exitoso
-            header("Location: Main.html");
+            header("Location: Login.html");
             exit();
         } else {
             // Si ocurre un error en la inserción, mostrar detalles del error

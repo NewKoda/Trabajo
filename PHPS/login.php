@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Redirigir al perfil o página principal
             echo "<script>
                     setTimeout(function(){
-                        window.location.href = 'Main.html';
+                        window.location.href = 'MainLogin.html';
                     }, 2000); // Redirigir después de 2 segundos
                   </script>";
             exit;
