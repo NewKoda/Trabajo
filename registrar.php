@@ -1,48 +1,40 @@
 <?php
-// Configuración de la base de datos
-$host = 'sql113.infinityfree.com'; // Tu Host Name
-$dbname = 'if0_37779085_Usuarios'; // Tu DB Name
-$user = 'if0_37779085'; // Tu User Name
-$password = '8MTQqlveVL8go'; // Tu Password
+// Mostrar errores de PHP (para depuración)
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-// Conexión a la base de datos
+// Datos de conexión a la base de datos
+$host = "localhost";
+$dbname = "dios";  // Nombre de tu base de datos
+$username = "root";  // Usuario de MySQL
+$password = "";  // Sin contraseña en XAMPP por defecto
+
 try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Error al conectar con la base de datos: " . $e->getMessage());
-}
+    // Crear la conexión PDO
+    $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-// Verificar si los datos fueron enviados
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = trim($_POST['username']);
-    $email = trim($_POST['email']);
-    $password = trim($_POST['password']);
+    // Verificar si el formulario ha sido enviado
+    if ($_SERVER["REQUEST_METHOD"] === "POST") {
+        // Capturar los datos del formulario
+        $username = $_POST['username'];
+        $email = $_POST['email'];
+        $password = password_hash($_POST['password'], PASSWORD_BCRYPT); // Encriptar la contraseña
 
-    // Validar los datos
-    if (!empty($username) && !empty($email) && !empty($password)) {
-        // Hashear la contraseña
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        // Insertar los datos en la tabla 'usuarios'
+        $sql = "INSERT INTO usuarios (USERNAME, EMAIL, PASSWORD) VALUES (:username, :email, :password)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindParam(':username', $username);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':password', $password);
+        $stmt->execute(); // Ejecutar la consulta
 
-        // Insertar los datos en la base de datos
-        $sql = "INSERT INTO Usuarios (USERNAME, EMAIL, PASSWORD) VALUES (:username, :email, :password)";
-        $stmt = $pdo->prepare($sql);
-        try {
-            $stmt->execute([
-                ':username' => $username,
-                ':email' => $email,
-                ':password' => $hashed_password,
-            ]);
-            echo "Usuario registrado con éxito. <a href='login.html'>Inicia sesión aquí</a>.";
-        } catch (PDOException $e) {
-            if ($e->getCode() == 23000) { // Código para entrada duplicada
-                echo "El correo ya está registrado.";
-            } else {
-                echo "Error al registrar el usuario: " . $e->getMessage();
-            }
-        }
-    } else {
-        echo "Por favor, completa todos los campos.";
+        // Mensaje de éxito
+        echo "Usuario registrado correctamente.";
     }
+} catch (PDOException $e) {
+    // En caso de error en la conexión o consulta
+    echo "Error: " . $e->getMessage();
 }
 ?>
