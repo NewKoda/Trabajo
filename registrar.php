@@ -1,4 +1,7 @@
 <?php
+// Iniciar sesión para guardar la información del usuario
+session_start();
+
 // Mostrar errores de PHP (para depuración)
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -51,8 +54,15 @@ try {
         $stmt->bindParam(':password', $hashed_password);
 
         if ($stmt->execute()) {
-            // Redirigir a la página principal después de un registro exitoso
-            header("Location: Main.html");
+            // Guardar el nombre de usuario en la sesión
+            $_SESSION['username'] = $username;
+
+            // Mostrar el mensaje de éxito
+            echo "<h2>¡Felicidades! Ya eres uno de nosotros.</h2>";
+            echo "<p>Serás redirigido en 3 segundos...</p>";
+
+            // Redirigir después de 3 segundos
+            header("Refresh: 3; url=Login.html");
             exit();
         } else {
             // Si ocurre un error en la inserción, mostrar detalles del error
