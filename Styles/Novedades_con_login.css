@@ -202,3 +202,113 @@ footer {
   height: 30px; /* Tamaño uniforme para los íconos */
   margin: 0 5px; /* Espaciado horizontal entre íconos */
 }
+/* Pantallas de hasta 768px (tabletas y teléfonos en orientación horizontal) */
+@media (max-width: 768px) {
+  .navbar ul {
+      flex-direction: column; /* Los enlaces de la barra de navegación se apilan */
+      align-items: center; /* Centrar los elementos */
+  }
+
+  .main-content {
+      flex-direction: column; /* Coloca los elementos en columnas */
+  }
+
+  .sidebar,
+  .content,
+  .gallery {
+      width: 100%; /* Cada sección ocupa todo el ancho en pantallas pequeñas */
+  }
+
+  .hero img {
+      height: 400px; /* Reducir el tamaño de la imagen en pantallas más pequeñas */
+  }
+
+  footer {
+      padding: 15px;
+  }
+
+  .gym-gifs {
+      margin-top: 15px;
+  }
+}
+
+/* Pantallas de hasta 480px (teléfonos móviles) */
+@media (max-width: 480px) {
+  .navbar {
+      padding: 5px 10px; /* Reducir padding de la barra de navegación */
+  }
+
+  .navbar ul {
+      padding: 0;
+  }
+
+  .navbar li {
+      margin: 5px 0; /* Reducir el espacio entre los enlaces */
+  }
+
+  .hero img {
+      height: 300px; /* Reducir el tamaño de la imagen en pantallas muy pequeñas */
+  }
+
+  .main-content {
+      padding: 10px; /* Reducir padding en la sección principal */
+  }
+
+  .gym-gifs img {
+      margin: 10px;
+      max-width: 100%;  /* Permite que los GIFs escalen de acuerdo al ancho del contenedor */
+      height: auto; /* Mantiene la proporción original del GIF */
+  }
+
+  .boxed {
+      padding: 10px; /* Reducir el padding en las cajas */
+      height: 500px;
+  }
+}
+
+/* Pantallas de hasta 430px */
+@media (max-width: 430px) {
+  .navbar {
+      padding: 5px 10px; /* Reducir padding de la barra de navegación */
+  }
+
+  .navbar ul {
+      padding: 0;
+  }
+
+  .navbar li {
+      margin: 5px 0; /* Reducir el espacio entre los enlaces */
+  }
+
+  .hero img {
+      height: 300px; /* Reducir el tamaño de la imagen en pantallas muy pequeñas */
+  }
+
+  .main-content {
+      padding: 5px;
+      gap: 10px; /* Reducir el espacio entre los elementos */
+  }
+
+  .boxed h3,
+  .boxed p {
+      font-size: 14px; /* Reducir el tamaño de la fuente */
+      line-height: 1.4; /* Aumentar la altura de línea para separar los párrafos */
+  }
+
+  .boxed {
+      padding: 10px;
+      height: 880px;
+  }
+.blue-box{
+  padding: 10px;
+  height: 1000px;
+}
+  .content p {
+      font-size: 14px; /* Reduce el tamaño del texto para pantallas más pequeñas */
+      line-height: 1.5; /* Aumenta la altura de línea para separar los párrafos */
+  }
+
+  .gym-gifs img {
+      max-width: 40%; /* Los GIFs no ocuparán todo el ancho de la pantalla */
+  }
+}
