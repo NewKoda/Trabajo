@@ -30,8 +30,9 @@ try {
         $stmt->bindParam(':password', $password);
         $stmt->execute(); // Ejecutar la consulta
 
-        // Mensaje de éxito
-        echo "Usuario registrado correctamente.";
+        // Redirigir a la página principal después de un registro exitoso
+        header("Location: Main.html");
+        exit(); // Asegurarse de que no se ejecute más código después de la redirección
     }
 } catch (PDOException $e) {
     // En caso de error en la conexión o consulta
