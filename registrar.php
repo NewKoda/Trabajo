@@ -17,25 +17,51 @@ try {
 
     // Verificar si el formulario ha sido enviado
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        // Capturar los datos del formulario
-        $username = $_POST['username'];
-        $email = $_POST['email'];
-        $password = password_hash($_POST['password'], PASSWORD_BCRYPT); // Encriptar la contraseña
+        // Validación de los datos del formulario
+        $username = trim($_POST['username']);
+        $email = trim($_POST['email']);
+        $password = trim($_POST['password']);
+
+        // Comprobar que no están vacíos
+        if (empty($username) || empty($email) || empty($password)) {
+            echo "Todos los campos son obligatorios.";
+            exit;
+        }
+
+        // Verificar si el email ya existe en la base de datos
+        $sql = "SELECT COUNT(*) FROM usuarios WHERE EMAIL = :email";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindParam(':email', $email);
+        $stmt->execute();
+        $count = $stmt->fetchColumn();
+
+        if ($count > 0) {
+            echo "Este correo electrónico ya está registrado.";
+            exit;
+        }
+
+        // Encriptar la contraseña
+        $hashed_password = password_hash($password, PASSWORD_BCRYPT);
 
         // Insertar los datos en la tabla 'usuarios'
         $sql = "INSERT INTO usuarios (USERNAME, EMAIL, PASSWORD) VALUES (:username, :email, :password)";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':username', $username);
         $stmt->bindParam(':email', $email);
-        $stmt->bindParam(':password', $password);
-        $stmt->execute(); // Ejecutar la consulta
+        $stmt->bindParam(':password', $hashed_password);
 
-        // Redirigir a la página principal después de un registro exitoso
-        header("Location: Main.html");
-        exit(); // Asegurarse de que no se ejecute más código después de la redirección
+        if ($stmt->execute()) {
+            // Redirigir a la página principal después de un registro exitoso
+            header("Location: Main.html");
+            exit();
+        } else {
+            // Si ocurre un error en la inserción, mostrar detalles del error
+            print_r($stmt->errorInfo()); // Muestra los detalles del error
+            echo "Hubo un error al registrar el usuario. Inténtalo nuevamente.";
+        }
     }
 } catch (PDOException $e) {
     // En caso de error en la conexión o consulta
-    echo "Error: " . $e->getMessage();
+    echo "Error de conexión o consulta: " . $e->getMessage();
 }
 ?>
