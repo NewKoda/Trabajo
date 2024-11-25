@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liga de Ensueño</title>
-    <link rel="stylesheet" href="informacion.css">
+    <link rel="stylesheet" href="Styles/informacion.css">
 </head>
 <body>
     <!-- Cabecera -->
     <header>
         <nav class="navbar">
+            <a href="Main.html" style="text-decoration: none;">
             <div class="logo-container">
                 <img src="imagenes/Logo.png" alt="Logo Liga de Ensueño" class="logo-img">
-                <div class="logo-text">Liga de Ensueño</div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#">Novedades</a></li>
-                <li><a href="#">Usuarios</a></li>
-            </ul>
-            <button class="login-button">Ingresar</button>
+        </a>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    
+                    <a href="Liga.html" style="text-decoration: none;">
+                        <li>Liga de Ensueño</li>
+                    </a>                    
+                     <a href="Novedades_con_login.html" style="text-decoration: none;">
+                        <li>Novedades</li>
+                     </a>
+                     <a href="USUARIOS_con_login.html" style="text-decoration: none;">
+                        <li>Usuarios</li>
+                     </a>
+                </ul>
+            </div>
+            <a href="Register.html" style="text-decoration: none;">
+                <button class="login-button">Ingresar</button>
+            </a>
         </nav>
     </header>
 
@@ -50,21 +63,21 @@
         </section>
     </main>
 
-    <!-- Pie de página -->
+  
     <footer>
         <div class="footer-content">
             <div class="footer-links">
-                <p>Novedades</p>
-                <p>Liga de Ensueño</p>
-                <p>Retos Diarios</p>
-                <p>Temas Destacados</p>
+                <a href="Novedades_con_login.html">Novedades</a>
+                <a href="Liga.html">Liga de Ensueño</a>
+                <a href="retos_con_login.html">Retos Diarios</a>
+                <a href="Temas_destacados.html">Temas Destacados</a>
             </div>
             <div class="footer-links">
-                <p>Sobre Nosotros</p>
-                <p>Información</p>
+                <a href="informacion.html">Sobre Nosotros</a>
+                <a href="informacion.html">Información</a>
             </div>
             <div class="footer-links">
-                <p>Compartir en tus redes sociales</p>
+                <p>Nuestras redes sociales</p>
                 <div class="social-icons">
                     <img src="imagenes/icon _instagram alt_.png" alt="Instagram">
                     <img src="imagenes/icon _facebook_.png" alt="Facebook">
@@ -72,6 +85,8 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>  <!-- Pie de página -->
+   
 </body>
 </html>
+

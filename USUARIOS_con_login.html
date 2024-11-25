@@ -3,115 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nueva Estructura</title>
-    <link rel="stylesheet" href="USUARIOS_con_login.css">
+    <title>Página Web</title>
+    <link rel="stylesheet" href="Styles/USUARIOS_con_login.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
+   <!-- Cabecera -->
+ <header>
+    <nav class="navbar">
+        <a href="Main.html" style="text-decoration: none;">
             <div class="logo-container">
                 <img src="imagenes/Logo.png" alt="Logo Liga de Ensueño" class="logo-img">
-                <div class="logo-text">Liga de Ensueño</div>
             </div>
+        </a>
+        <div class="nav-center">
             <ul class="nav-links">
-                <li><a href="#">Novedades</a></li>
-                <li><a href="#">Usuarios</a></li>
+                <a href="Liga.html" style="text-decoration: none;">
+                    <li>Liga de Ensueño</li>
+                </a>                    
+                <a href="Novedades_con_login.html" style="text-decoration: none;">
+                    <li>Novedades</li>
+                </a>
+                <a href="USUARIOS_con_login.html" style="text-decoration: none;">
+                    <li>Usuarios</li>
+                </a>
             </ul>
+        </div>
+        </div>
+        <a href="Register.html" style="text-decoration: none;">
             <button class="login-button">Ingresar</button>
-        </nav>
-    </header>
-
-    <main>
-        <section class="layout">
-            <!-- Cuadro 1 -->
-            <div class="box box-1">
+        </a>
+    </nav>
+    <div class="welcome-text">
+        <marquee behavior="scroll" direction="left">Bienvenidos. Y no olviden: "Entreno porque mi cuerpo me lo pide y mi mente lo necesita"</marquee>
+    </div>
+     <div class="gif-container">
+    <img src="imagenes/vide.gif" alt="GIF de entrenamiento" class="gif">
+</div>
+</header>
+    <main class="main-content">
+        <section class="ranking-section">
+            <div class="ranking">
                 <h2>Medallas Usuarios Ranking</h2>
-                <p>Usuarios con más puntos</p>
-                <p>Usuarios más relevantes</p>
+                <ul>
+                    <li>Usuarios con más puntos: <strong>Linda</strong> (5000000)</li>
+                    <li>Usuarios más relevantes: <strong>Koda</strong> (89400000)</li>
+                </ul>
             </div>
 
-            <!-- Cuadro 2 -->
-            <div class="box box-2">
+            <div class="points">
                 <h2>Usuarios con más puntos</h2>
-                <div class="user-row">
-                    <img src="imagenes/" alt="Perfil 1" class="user-img">
-                    <span class="user-name">Linda</span>
-                    <span class="user-score">50001000</span>
-                </div>
-                <div class="user-row">
-                    <img src="imagenes/" alt="Perfil 2" class="user-img">
-                    <span class="user-name">Koda</span>
-                    <span class="user-score">400000</span>
-                </div>
-                <div class="user-row">
-                    <img src="imagenes/" alt="Perfil 3" class="user-img">
-                    <span class="user-name">Steve</span>
-                    <span class="user-score">300000</span>
-                </div>
-                <div class="user-row">
-                    <img src="imagenes/" alt="Perfil 4" class="user-img">
-                    <span class="user-name">Renegado</span>
-                    <span class="user-score">10000</span>
-                </div>
+                <ul>
+                    <li><img src="imagenes/personaje_10.png" alt="Linda"> Linda (5000000)</li>
+                    <li><img src="imagenes/personaje_11.png" alt="Steve"> Steve (300000)</li>
+                </ul>
             </div>
 
-            <!-- Cuadro 3 -->
-            <div class="box box-3">
+            <div class="relevant">
                 <h2>Usuarios más relevantes</h2>
-                <div class="user-row">
-                    <img src="imagenes/personaje_10.png" alt="Perfil 1" class="user-img">
-                    <span class="user-name">Linda</span>
-                    <span class="user-score">300000</span>
-                </div>
-                <div class="user-row">
-                    <img src="imagenes/personaje_11.png" alt="Perfil 2" class="user-img">
-                    <span class="user-name">Steve</span>
-                    <span class="user-score">250000</span>
-                </div>
-                <div class="user-row">
-                    <img src="imagenes/personaje_12.png" alt="Perfil 3" class="user-img">
-                    <span class="user-name">Lola</span>
-                    <span class="user-score">200000</span>
-                </div>
-                <div class="user-row">
-                    <img src="imagenes/personaje_1.png" alt="Perfil 4" class="user-img">
-                    <span class="user-name">Koda</span>
-                    <span class="user-score">150000</span>
-                </div>
+                <ul>
+                    <li><img src="imagenes/waifuperfi.png" alt="Koda"> Koda (400000)</li>
+                    <li><img src="imagenes/personaje_11.png" alt="Steve"> Steve (300000)</li>
+                </ul>
             </div>
+        </section>
 
-            <!-- Cuadro 4 -->
-            <div class="box box-4">
-                <h2>Buscar Usuario</h2>
-                <p>Nombre usuario:</p>
-            </div>
-
-            <!-- Cuadro 5 -->
-            <div class="box box-5">
-                <h2>Nuevos Usuarios</h2>
-                <div class="avatars">
-                    <img src="imagenes/" alt="Usuario 1">
-                    <img src="imagenes/" alt="Usuario 2">
-                    <img src="imagenes/" alt="Usuario 3">
-                    <img src="imagenes/" alt="Usuario 4">
-                    <img src="imagenes/" alt="Usuario 5">
-                    <img src="imagenes/" alt="Usuario 6">
-                    <img src="imagenes/" alt="Usuario 7">
-                    <img src="imagenes/" alt="Usuario 8">
-                </div>
+        <section class="new-users">
+            <h2>Nuevos Usuarios</h2>
+            <div class="users-grid">
+                <img src="imagenes/personaje_1.png" alt="Usuario 1">
+                <img src="imagenes/personaje_2.png" alt="Usuario 2">
+                <img src="imagenes/personaje_3.png" alt="Usuario 3">
+                <img src="imagenes/personaje_5.png" alt="Usuario 4">
+                <img src="imagenes/personaje_6.png" alt="Usuario 5">
+                <img src="imagenes/personaje_7.png" alt="Usuario 6">
             </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-content">
-            <p>Novedades | Sobre Nosotros | Contacto</p>
-            <div class="social-icons">
-                <img src="imagenes/icon _instagram alt_.png" alt="Instagram">
-                <img src="imagenes/icon _facebook_.png" alt="Facebook">
-                <img src="imagenes/icon _whatsapp_.png" alt="WhatsApp">
+            <div class="footer-links">
+                <a href="Novedades_con_login.html">Novedades</a>
+                <a href="Liga.html">Liga de Ensueño</a>
+                <a href="retos_con_login.html">Retos Diarios</a>
+                <a href="Temas_destacados.html">Temas Destacados</a>
+            </div>
+            <div class="footer-links">
+                <a href="informacion.html">Sobre Nosotros</a>
+                <a href="informacion.html">Información</a>
+            </div>
+            <div class="footer-links">
+                <p>Nuestras redes sociales</p>
+                <div class="social-icons">
+                    <img src="imagenes/icon _instagram alt_.png" alt="Instagram">
+                    <img src="imagenes/icon _facebook_.png" alt="Facebook">
+                    <img src="imagenes/icon _whatsapp_.png" alt="WhatsApp">
+                </div>
             </div>
         </div>
     </footer>
+    
 </body>
 </html>

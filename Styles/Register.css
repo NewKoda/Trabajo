@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black; /* Fondo negro */
-    color: white;
+    color: #fff;
+    background-color: #1a1a1a;
 }
 
 .container {
@@ -150,8 +150,44 @@ button:hover {
     text-transform: uppercase;
 }
 
+  
+/* Estilo general del footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
 
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado entre los bloques de enlaces */
+}
 
+.footer-links {
+    display: flex;
+    flex-direction: column; /* Acomoda los enlaces en columna */
+    gap: 10px; /* Espaciado entre enlaces dentro de la columna */
+    text-align: center;
+}
+
+.footer-links a {
+    text-decoration: none; /* Sin subrayados */
+    color: #fff; /* Mantiene el texto blanco */
+    font-family: inherit; /* Usa la misma fuente */
+    transition: color 0.3s ease; /* Suaviza el hover */
+}
+
+.footer-links a:hover {
+    color: #1e90ff; /* Cambia el color al pasar el cursor */
+}
+
+.social-icons img {
+    height: 30px; /* Tamaño uniforme para los íconos */
+    margin: 0 5px; /* Espaciado horizontal entre íconos */
+}
   
 @media (max-width: 768px) {
     .container {

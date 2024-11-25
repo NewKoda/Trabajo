@@ -1,26 +1,10 @@
-/* Estilos generales */
+/* General */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #fff;
     background-color: #1a1a1a;
-}
-
-.marquee-container {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.marquee {
-    display: inline-block;
-    animation: marquee 10s linear infinite;
-}
-
-@keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
 }
 
 /* Navbar */
@@ -30,10 +14,23 @@ body {
     align-items: center;
     background-color: #000;
     padding: 15px 20px;
-    position: relative;
 }
 
-/* Botón de login */
+.logo-container .logo-img {
+    height: 50%;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li {
+    color: #fff;
+    font-weight: bold;
+}
+
 .login-button {
     background-color: #fff;
     color: #000;
@@ -41,6 +38,14 @@ body {
     padding: 10px 15px;
     border-radius: 5px;
     font-weight: bold;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 15px 20px;
+    position: relative;
 }
 
 .logo-container {
@@ -73,203 +78,97 @@ body {
     text-align: center;
 }
 
-.hero img {
-    width: 100%;  /* La imagen ocupa todo el ancho disponible */
-    height: 620px; /* Mantiene la proporción original de la imagen */
-    display: block; /* Elimina el espacio debajo de la imagen */
-    object-fit: cover; /* Permite que la imagen cubra todo el contenedor sin distorsionarse */
-}
-
-/* Estilo para el borde de los usuarios normales */
-.boxed {
-    border: 2px solid #404040; /* Borde gris para usuarios normales */
-    border-radius: 15;
-}
-
-/* Nueva clase .boxed que aplica el borde azul */
-.boxed {
-    border: 2px solid #1e90ff; /* Borde azul */
-    padding: 15px;
-    margin-bottom: 20px;
-    background-color: #222; /* Fondo oscuro para los cuadros */
-    height: 780px;
-}
-
-/* Nueva clase para el contenedor de los temas */
-.topics-boxed {
-    text-align: center; /* Centra el contenido */
-    margin-top: 20px;
-}
-
-.topics-boxed ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Estilos para la caja azul */
-.blue-box {
-    background-color: #404040; /* Color de fondo azul */
-    color: white; /* Texto blanco */
-    padding: 20px 15px; /* Aumenta el padding superior e inferior */
-    border-radius: 15px 15px 0 0; /* Bordes redondeados solo en la parte superior */
-    display: inline-block; /* Hace que el cuadro ajuste su tamaño al contenido */
-    margin: 0; /* Elimina márgenes adicionales */
-    font-size: 16px; /* Ajusta el tamaño de la fuente */
-    height: auto; /* Ajuste dinámico para permitir crecimiento */
-}
-
-.blue-box h3, .blue-box p {
-    margin: 0; /* Eliminar márgenes internos */
-    height: 50px;
-}
-
-.topics-boxed li {
-    border: 2px solid #1e90ff; /* Borde azul individual */
-    padding: 10px;
-    margin-bottom: 15px; /* Espacio entre los cuadros */
-    background-color: #222; /* Fondo oscuro */
-    text-align: center; /* Centra el texto */
-}
-
-.topics-boxed a {
-    text-decoration: none;
-    color: #1e90ff; /* Color azul para los enlaces */
+/* Botón de login */
+.login-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
     font-weight: bold;
 }
-
-.topics-boxed a:hover {
-    color: #fff; /* Color blanco al pasar el ratón */
-}
-
-/* Layout principal */
-.main-content {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
-    padding: 20px;
-    gap: 20px;
-}
-
-.sidebar {
-    width: 20%;
-    background-color: #222;
-    padding: 15px;
-}
-
-.content {
-    width: 60%;
+/* Barra de navegación superior */
+.navigation-bar {
     background-color: #333;
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
 
-.gallery {
-    width: 20%;
-    background-color: #222;
-    padding: 15px;
+.nav-item {
+    background-color: #0056b3;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.gallery-images img {
-    width: 100%;
+.nav-item:hover {
+    background-color: #003366;
+}
+
+/* Main content */
+.main-content {
+    padding: 20px;
+    background-color: #000000;
+}
+
+.article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #4D4D4D;
+    border-radius: 8px;
+}
+
+.title-box {
+    background-color: #0078D7;
+    padding: 10px;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 
-/* Footer */
-footer {
-    background-color: #000;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.footer-links {
-    margin: 10px;
-    text-align: center;
-}
-
-.footer-links p {
-    margin: 5px 0;
-}
-
-.social-icons img {
-    height: 30px;
-    margin: 5px;
-}
-
-.gym-gifs {
-    text-align: center;
-    margin-top: 20px;
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
-}
-
-.gym-gifs img {
-    margin: 10px;
-    max-width: 30%;  /* Limita el tamaño de las imágenes para que no se desborden */
-    height: auto; /* Mantiene la proporción de la imagen */
-}
-
-/* Nueva sección de cabecera de usuario en los artículos */
-.header-info {
-    display: flex;
-    align-items: center; /* Alinea verticalmente los elementos */
-    gap: 15px; /* Espacio entre los elementos */
-    margin-bottom: 10px; /* Espacio debajo de la sección */
-}
-
-.user-logo {
-    width: 40px; /* Tamaño del logo */
-    height: 40px; /* Tamaño del logo */
-    border-radius: 50%; /* Hace el logo redondeado */
-}
-
-.username {
-    font-weight: bold;
+.title-box h2 {
     color: #fff;
-    font-size: 16px;
-}
-
-.user-type {
-    background-color: #1e90ff;
-    padding: 5px 10px;
-    border-radius: 15px;
-    color: white;
-    font-size: 14px;
-}
-.align-left {
-    text-align: left; /* Alinea el texto al borde izquierdo del contenedor */
-}
-
-
-.admin-type {
-    background-color: #1e90ff;
-    padding: 5px 10px;
-    border-radius: 15px;
-    color: white;
-    font-size: 14px;
-}
-.post-date {
-    color: #888;
-    font-size: 12px;
-}
-
-/* Estilo del cuadro principal (la caja azul) */
-.blue-box {
-    background-color: #404040; 
-    color: white;
-    padding: 20px 15px;
-    border-radius: 15px;
-    display: inline-block;
+    font-size: 1.2rem;
     margin: 0;
-    font-size: 16px;
-    height: 900px; /* Ajuste dinámico para permitir crecimiento */
 }
+
+.article-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.article-content img {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.article-content .small-img {
+    width: 20%;
+}
+
+.article-content p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Footer Images */
+.footer-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.footer-images img {
+    width: 400px;
+    height: auto;
+}
+
 /* Estilo general del footer */
 footer {
     background-color: #000;
@@ -307,6 +206,7 @@ footer {
     height: 30px; /* Tamaño uniforme para los íconos */
     margin: 0 5px; /* Espaciado horizontal entre íconos */
 }
+
 /* Media Queries para Responsividad */
 
 /* Pantallas de hasta 768px (tabletas y teléfonos en orientación horizontal) */

@@ -4,106 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Liga de Ensueños</title>
-  <link rel="stylesheet" href="Liga.css">
+  <link rel="stylesheet" href="Styles/Liga.css">
 </head>
 <body>
-  <!-- Cabecera -->
-  <header>
-    <div class="header-container">
-      <div class="logo">
-        <img src="logo.png" alt="Logo">
-      </div>
-      <div class="menu">
-        <a href="#">Home</a>
-        <a href="#">Usuarios</a>
-        <a href="#" class="perfil-btn">Perfil</a>
-      </div>
-    </div>
+    <!-- Cabecera -->
+    <header>
+      <nav class="navbar">
+          <a href="Main.html" style="text-decoration: none;">
+          <div class="logo-container">
+              <img src="imagenes/Logo.png" alt="Logo Liga de Ensueño" class="logo-img">
+          </div>
+      </a>
+          <div class="nav-center">
+              <ul class="nav-links">
+                  
+                  <a href="Liga.html" style="text-decoration: none;">
+                      <li>Liga de Ensueño</li>
+                  </a>                    
+                   <a href="Novedades_con_login.html" style="text-decoration: none;">
+                      <li>Novedades</li>
+                   </a>
+                   <a href="USUARIOS_con_login.html" style="text-decoration: none;">
+                      <li>Usuarios</li>
+                   </a>
+              </ul>
+          </div>
+          <a href="Register.html" style="text-decoration: none;">
+              <button class="login-button">Ingresar</button>
+          </a>
+      </nav>
   </header>
-
-  <!-- Contenido principal -->
-  <main>
-    <!-- Sección principal -->
-    <section class="main-section">
-      <h2>Liga de Ensueños</h2>
-      <p>
-        La Liga de Ensueños es una sección en la que los usuarios deberán completar ejercicios diarios para subir de rango y competir contra otros en su mismo rango.
-      </p>
-      <p>
-        En la Liga de Ensueños, existen tres rangos principales: Rango Motivos, Rango Ascendente y Rango Diamante. Los usuarios comenzarán en los dos primeros rangos y acumularán puntos para subir de nivel y avanzar al rango final. Además, se pueden realizar retos para brindar una motivación adicional a los usuarios, incentivándolos a entrenar todos los días.
-      </p>
+  
+  <main class="main-content">
+    <section class="intro blue-block">
+      <h1>Liga de Ensueños</h1>
+      <p>La Liga de Ensueños es una sección en la que los usuarios deberán completar ejercicios diarios para subir de rango...</p>
     </section>
-
-    <!-- Rangos -->
-    <section class="rangos-section">
+    
+    <section class="ranks blue-block">
       <h2>Rangos Disponibles</h2>
-
-      <!-- Rango Motivos -->
-      <div class="rango">
-        <div class="rango-imagen">
-          <img src="medalla.png" alt="Medalla">
-        </div>
-        <div class="rango-descripcion">
+      <div class="rank">
+        <div class="rank-icon">🏅</div>
+        <div class="rank-info">
           <h3>Rango Motivos</h3>
-          <p>
-            El "Rango Motivos" es el nivel inicial en nuestra Liga de Ensueños. Todos los nuevos usuarios comenzarán en esta liga, compitiendo entre sí para acumular puntos.
-          </p>
+          <p>Es el nivel inicial donde los usuarios comienzan su camino...</p>
         </div>
       </div>
-
-      <!-- Rango Esmeralda -->
-      <div class="rango">
-        <div class="rango-imagen">
-          <img src="esmeralda.png" alt="Esmeralda">
-        </div>
-        <div class="rango-descripcion">
+      <div class="rank">
+        <div class="rank-icon">💎</div>
+        <div class="rank-info">
           <h3>Rango Esmeralda</h3>
-          <p>
-            El "Rango Esmeralda" es el segundo nivel en nuestra Liga de Ensueños. Los usuarios que avanzan desde el rango inicial entrarán en esta liga, donde continuarán demostrando su excelencia.
-          </p>
+          <p>El siguiente nivel en el que los participantes continúan acumulando puntos...</p>
         </div>
       </div>
-
-      <!-- Rango Diamante -->
-      <div class="rango">
-        <div class="rango-imagen">
-          <img src="diamante.png" alt="Diamante">
-        </div>
-        <div class="rango-descripcion">
+      <div class="rank">
+        <div class="rank-icon">👑</div>
+        <div class="rank-info">
           <h3>Rango Diamante</h3>
-          <p>
-            El "Rango Diamante" es el nivel final en nuestra Liga de Ensueños. Los usuarios que han avanzado desde los niveles anteriores llegarán a esta liga, donde continuarán compitiendo para acumular puntos.
-          </p>
+          <p>El nivel más alto, representando la excelencia y motivación máxima...</p>
         </div>
       </div>
     </section>
-
-    <!-- Últimos mensajes -->
-    <section class="mensajes-section">
+    
+    <section class="messages blue-block">
       <h2>Últimos Mensajes de Perfil</h2>
-      <div class="mensaje">
-        <p><strong>New-koda:</strong> ¡Por fin subí de rango!</p>
-        <span>El viernes a las 04:00</span>
+      <div class="message">
+        <img src="imagenes/waifuperfi.png" alt="Perfil" class="profile-pic">
+        <p><strong>New-Koda:</strong> Perfil Plus: Subir de rango</p>
+        <span>El viernes a las 00:03</span>
       </div>
-      <div class="mensaje">
-        <p><strong>Rox:</strong> Espero superar mi rango</p>
-        <span>El viernes a las 04:00</span>
+      <div class="message">
+        <img src="imagenes/waifuperfi.png" alt="Perfil" class="profile-pic">
+        <p><strong>New-Koda:</strong> Espero mejorar mi rango</p>
+        <span>El viernes a las 00:03</span>
       </div>
     </section>
   </main>
 
-  <!-- Pie de página -->
   <footer>
-    <div class="footer-container">
-      <a href="#">Novedades</a>
-      <a href="#">Sobre Nosotros</a>
-      <a href="#">Temas Destacados</a>
-      <div class="social-media">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">Twitter</a>
-      </div>
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="Novedades_con_login.html">Novedades</a>
+            <a href="Liga.html">Liga de Ensueño</a>
+            <a href="retos_con_login.html">Retos Diarios</a>
+            <a href="Temas_destacados.html">Temas Destacados</a>
+        </div>
+        <div class="footer-links">
+            <a href="informacion.html">Sobre Nosotros</a>
+            <a href="informacion.html">Información</a>
+        </div>
+        <div class="footer-links">
+            <p>Nuestras redes sociales</p>
+            <div class="social-icons">
+                <img src="imagenes/icon _instagram alt_.png" alt="Instagram">
+                <img src="imagenes/icon _facebook_.png" alt="Facebook">
+                <img src="imagenes/icon _whatsapp_.png" alt="WhatsApp">
+            </div>
+        </div>
     </div>
-  </footer>
+</footer>
 </body>
 </html>

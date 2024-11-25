@@ -1,0 +1,204 @@
+ /* Estilos generales */
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #1a1a1a;
+}
+h2, h3 {
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+}
+
+.user-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.username, .date {
+  margin: 0;
+}
+
+.login-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: auto; /* Mueve el botón a la derecha */
+}
+/* Contenedor principal centrado */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px; /* Añadir espacio entre columnas */
+}
+
+/* Sección principal */
+.content-section {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Título de cada sección */
+.section-title {
+  background-color: #007bff;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Estilo de los cuadros */
+.single-box {
+  background-color: #444;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Estilo para mensajes y perfiles */
+.message-info, .profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #555;
+}
+
+.profile-info:last-child {
+  border-bottom: none;
+}
+
+/* Estilo para cada perfil */
+.profile-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-weight: bold;
+  color: #fff;
+}
+
+.profile-text {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.profile-date {
+  font-size: 0.8rem;
+  color: #999;
+  white-space: nowrap;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.small-box {
+  font-size: 0.9rem;
+}
+
+/* Ajustar cuadro Conectados */
+.connected-box {
+  display: block;
+  width: 100%; /* Ocupa todo el ancho */
+  margin-bottom: 10px; /* Espacio entre cuadros */
+}
+/* Estilo general del footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaciado entre los bloques de enlaces */
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column; /* Acomoda los enlaces en columna */
+  gap: 10px; /* Espaciado entre enlaces dentro de la columna */
+  text-align: center;
+}
+
+.footer-links a {
+  text-decoration: none; /* Sin subrayados */
+  color: #fff; /* Mantiene el texto blanco */
+  font-family: inherit; /* Usa la misma fuente */
+  transition: color 0.3s ease; /* Suaviza el hover */
+}
+
+.footer-links a:hover {
+  color: #1e90ff; /* Cambia el color al pasar el cursor */
+}
+
+.social-icons img {
+  height: 30px; /* Tamaño uniforme para los íconos */
+  margin: 0 5px; /* Espaciado horizontal entre íconos */
+}

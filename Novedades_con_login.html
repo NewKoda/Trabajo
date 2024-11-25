@@ -4,23 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foro de Entrenamiento</title>
-  <link rel="stylesheet" href="Novedades_con_login.css">
+  <link rel="stylesheet" href="Styles/Novedades_con_login.css">
 </head>
 <body>
-  <!-- Cabecera -->
-  <header>
-    <div class="logo">Liga de Ensueño</div>
-    <nav class="navbar">
-      <a href="#">Novedades</a>
-      <a href="#">Temas destacados</a>
-      <a href="#">Retos</a>
-    </nav>
-    <button class="login-btn">Ingresar</button>
-  </header>
+ <!-- Cabecera -->
+ <header>
+  <nav class="navbar">
+      <a href="Main.html" style="text-decoration: none;">
+          <div class="logo-container">
+              <img src="imagenes/Logo.png" alt="Logo Liga de Ensueño" class="logo-img">
+          </div>
+      </a>
+      <div class="nav-center">
+          <ul class="nav-links">
+              <a href="Liga.html" style="text-decoration: none;">
+                  <li>Liga de Ensueño</li>
+              </a>                    
+              <a href="Novedades_con_login.html" style="text-decoration: none;">
+                  <li>Novedades</li>
+              </a>
+              <a href="USUARIOS_con_login.html" style="text-decoration: none;">
+                  <li>Usuarios</li>
+              </a>
+          </ul>
+      </div>
+      </div>
+      <a href="Register.html" style="text-decoration: none;">
+          <button class="login-button">Ingresar</button>
+      </a>
+  </nav>
+</header>
 
   <!-- Contenido principal -->
   <main class="main-content">
-    <!-- Nuevos Mensajes -->
+    <!-- Sección combinada: Nuevos Mensajes y Últimos Mensajes de Perfil -->
     <section class="content-section">
       <h2 class="section-title">Nuevos Mensajes</h2>
       <div class="single-box">
@@ -37,28 +54,31 @@
           <p>Visitas: 86</p>
         </div>
       </div>
-    </section>
 
-    <!-- Últimos Mensajes de Perfil -->
-    <section class="content-section">
       <h2 class="section-title">Últimos Mensajes de Perfil</h2>
       <div class="single-box">
         <div class="profile-info">
-          <p class="profile-name">New-koda</p>
-          <p class="profile-text">Espero mejorar</p>
+          <img class="profile-logo" src="imagenes/waifuperfi.png" alt="Logo">
+          <div class="profile-details">
+            <p class="profile-name">New-koda</p>
+            <p class="profile-text">Espero mejorar</p>
+          </div>
           <span class="profile-date">El viernes a las 04:00</span>
         </div>
         <div class="profile-info">
-          <p class="profile-name">New-koda</p>
-          <p class="profile-text">Ojalá un 5 estrellas</p>
+          <img class="profile-logo" src="imagenes/waifuperfi.png" alt="Logo">
+          <div class="profile-details">
+            <p class="profile-name">New-koda</p>
+            <p class="profile-text">Ojalá un 5 estrellas</p>
+          </div>
           <span class="profile-date">El viernes a las 04:00</span>
         </div>
       </div>
     </section>
 
-    <!-- Cuadros pequeños a la derecha -->
+    <!-- Sidebar -->
     <aside class="sidebar">
-      <div class="box small-box">
+      <div class="box connected-box">
         <h3>Conectados</h3>
         <p>No hay usuarios conectados</p>
         <p>Total: 50 usuarios actuales. 0 futuros, presentes: 50</p>
@@ -73,30 +93,28 @@
     </aside>
   </main>
 
-  <!-- Pie de página -->
+ 
   <footer>
-    <div class="footer-section">
-      <h3>Novedades</h3>
-      <ul>
-        <li>Liga de Ensueño</li>
-        <li>Retos diarios</li>
-        <li>Temas destacados</li>
-      </ul>
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="Novedades_con_login.html">Novedades</a>
+            <a href="Liga.html">Liga de Ensueño</a>
+            <a href="retos_con_login.html">Retos Diarios</a>
+            <a href="Temas_destacados.html">Temas Destacados</a>
+        </div>
+        <div class="footer-links">
+            <a href="informacion.html">Sobre Nosotros</a>
+            <a href="informacion.html">Información</a>
+        </div>
+        <div class="footer-links">
+            <p>Nuestras redes sociales</p>
+            <div class="social-icons">
+                <img src="imagenes/icon _instagram alt_.png" alt="Instagram">
+                <img src="imagenes/icon _facebook_.png" alt="Facebook">
+                <img src="imagenes/icon _whatsapp_.png" alt="WhatsApp">
+            </div>
+        </div>
     </div>
-    <div class="footer-section">
-      <h3>Sobre nosotros</h3>
-      <ul>
-        <li>Información</li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h3>Redes sociales</h3>
-      <ul>
-        <li>Instagram</li>
-        <li>Facebook</li>
-        <li>WhatsApp</li>
-      </ul>
-    </div>
-  </footer>
+</footer>
 </body>
 </html>
