@@ -1,9 +1,9 @@
 <?php
 // Datos de conexión
-$host = "localhost"; // Dirección del servidor (localhost si es local)
-$usuario = "root";   // Nombre de usuario
-$contraseña = "";    // Contraseña
-$base_de_datos = "mi_base_de_datos"; // Nombre de la base de datos
+$host = "localhost";
+$usuario = "root";
+$contraseña = "";
+$base_de_datos = "mi_base_de_datos";
 
 // Crear la conexión
 $conn = new mysqli($host, $usuario, $contraseña, $base_de_datos);

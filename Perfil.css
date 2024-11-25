@@ -1,0 +1,287 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1a1a1a; /* Fondo gris oscuro */
+}
+
+header {
+    background: #333; /* Fondo gris oscuro */
+    color: white;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    background: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px; /* Bordes curvos */
+}
+
+.login-button:hover {
+    background: #ccc;
+}
+
+main {
+    padding: 20px;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-size: 32px;
+    font-family: Just Another Hand, cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.user-type {
+    font-size: 20px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    color: #4D94FF; /* Azul */
+}
+
+.profile-details {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile-details h2 {
+    font-size: 24px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.profile-details p {
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #333; /* Fondo gris oscuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Pantallas de hasta 768px (tabletas y teléfonos en orientación horizontal) */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Los enlaces de la barra de navegación se apilan */
+        align-items: center; /* Centrar los elementos */
+    }
+
+    .main-content {
+        flex-direction: column; /* Coloca los elementos en columnas */
+    }
+
+    .sidebar,
+    .content,
+    .gallery {
+        width: 100%; /* Cada sección ocupa todo el ancho en pantallas pequeñas */
+    }
+
+    .hero img {
+        height: 400px; /* Reducir el tamaño de la imagen en pantallas más pequeñas */
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    .gym-gifs {
+        margin-top: 15px;
+    }
+}
+
+/* Pantallas de hasta 480px (teléfonos móviles) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px 10px; /* Reducir padding de la barra de navegación */
+    }
+
+    .navbar ul {
+        padding: 0;
+    }
+
+    .navbar li {
+        margin: 5px 0; /* Reducir el espacio entre los enlaces */
+    }
+
+    .hero img {
+        height: 300px; /* Reducir el tamaño de la imagen en pantallas muy pequeñas */
+    }
+
+    .main-content {
+        padding: 10px; /* Reducir padding en la sección principal */
+    }
+
+    .gym-gifs img {
+        margin: 10px;
+        max-width: 100%;  /* Permite que los GIFs escalen de acuerdo al ancho del contenedor */
+        height: auto; /* Mantiene la proporción original del GIF */
+    }
+
+    .boxed {
+        padding: 10px; /* Reducir el padding en las cajas */
+        height: 500px;
+    }
+}
+
+/* Pantallas de hasta 430px */
+@media (max-width: 430px) {
+    .navbar {
+        padding: 5px 10px; /* Reducir padding de la barra de navegación */
+    }
+
+    .navbar ul {
+        padding: 0;
+    }
+
+    .navbar li {
+        margin: 5px 0; /* Reducir el espacio entre los enlaces */
+    }
+
+    .hero img {
+        height: 300px; /* Reducir el tamaño de la imagen en pantallas muy pequeñas */
+    }
+
+    .main-content {
+        padding: 5px;
+        gap: 10px; /* Reducir el espacio entre los elementos */
+    }
+
+    .boxed h3,
+    .boxed p {
+        font-size: 14px; /* Reducir el tamaño de la fuente */
+        line-height: 1.4; /* Aumentar la altura de línea para separar los párrafos */
+    }
+
+    .boxed {
+        padding: 10px;
+        height: 880px;
+    }
+.blue-box{
+    padding: 10px;
+    height: 1000px;
+}
+    .content p {
+        font-size: 14px; /* Reduce el tamaño del texto para pantallas más pequeñas */
+        line-height: 1.5; /* Aumenta la altura de línea para separar los párrafos */
+    }
+
+    .gym-gifs img {
+        max-width: 40%; /* Los GIFs no ocuparán todo el ancho de la pantalla */
+    }
+}
