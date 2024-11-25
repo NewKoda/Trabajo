@@ -41,7 +41,26 @@ body {
     padding: 10px 15px;
     border-radius: 5px;
     font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
+
+
+.perfil-button {
+    background-color: #1e90ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.perfil-button:hover {
+    background-color: #ffffff; /* Inverso del color original */
+    color: #1e90ff; /* Inverso del texto original */
+    transform: scale(1.05); /* Animación ligera al agrandarse */
+}
+
 
 .logo-container {
     display: flex;
